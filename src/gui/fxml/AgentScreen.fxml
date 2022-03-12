@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SceneController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <ImageView fx:id="bgAgentScreen" fitHeight="500.0" fitWidth="801.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/elements/s.agent.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <RadioButton fx:id="radioButtonShipA" blendMode="RED" graphicTextGap="1.0" layoutX="204.0" layoutY="305.0" mnemonicParsing="false" onAction="#shipSelector" opacity="0.5" prefHeight="1.0" prefWidth="1.0" scaleX="2.2" scaleY="2.2" scaleZ="2.0">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </RadioButton>
+      <RadioButton fx:id="radioButtonShipB" blendMode="RED" graphicTextGap="1.0" layoutX="364.0" layoutY="305.0" mnemonicParsing="false" onAction="#shipSelector" opacity="0.5" prefHeight="1.0" prefWidth="16.0" scaleX="2.2" scaleY="2.2" scaleZ="2.0">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </RadioButton>
+   </children>
+</AnchorPane>
